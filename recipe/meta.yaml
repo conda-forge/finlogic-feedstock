@@ -1,4 +1,4 @@
-{% set name = "finlogic" %}
+{% set name = "FinLogic" %}
 {% set version = "0.3.7" %}
 
 package:
@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/FinLogic-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2e96f30c981d76de5fe37fecede2f5594f125848b1ab04af0eff375f9a50e51d
 
 build:
@@ -35,9 +35,6 @@ test:
 about:
   home: https://github.com/crdcj/FinLogic
   summary: Finance toolkit for listed Brazilian companies
-  description: FinLogic offers a Pythonic way to analyze financial data of listed companies
-    in Brazil from information made publicly avaible by local securities market authority (CVM).
-    This finance tool is built on top of Pandas.
   license: MIT
   license_file: LICENSE
 
