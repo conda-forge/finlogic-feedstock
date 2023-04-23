@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.10
     - pip
-    - pdm-backend
+    - pdm.backend
   run:
     - python >=3.10
     - pandas >=1.4.0
