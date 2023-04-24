@@ -1,5 +1,5 @@
 {% set name = "FinLogic" %}
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 62a03180676bb4cc6f5f654910794495f827703053ddc117de161eb74a5dc4ff
+  sha256: 8b6e4d8e0c5e5a2c46a0db713a5e13f5728adb77f3a87c69fb37eed312f7a7f6
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.10
     - pip
-    - pdm-pep517
+    - pdm-backend
   run:
     - python >=3.10
     - pandas >=1.4.0
