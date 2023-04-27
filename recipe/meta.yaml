@@ -1,13 +1,13 @@
-{% set name = "finlogic" %}
-{% set version = "0.3.5" %}
+{% set name = "FinLogic" %}
+{% set version = "0.3.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/FinLogic-{{ version }}.tar.gz
-  sha256: 023f1acf4e850d4eeed7154a84e43555808a52331e6169e021c014ac56b3d634
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: 94e08a18a4e262beab2deea4ffa847112410df6931fb98108b630ac1bccdda13
 
 build:
   noarch: python
@@ -17,8 +17,8 @@ build:
 requirements:
   host:
     - python >=3.10
-    - pdm-pep517 >=1.0
     - pip
+    - pdm-backend
   run:
     - python >=3.10
     - pandas >=1.4.0
@@ -34,10 +34,11 @@ test:
     - pip
 
 about:
+  home: https://github.com/crdcj/FinLogic
   summary: Finance toolkit for listed Brazilian companies
   license: MIT
   license_file: LICENSE
 
 extra:
   recipe-maintainers:
-    - CRCJ
+    - crdcj
