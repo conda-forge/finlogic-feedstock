@@ -1,5 +1,5 @@
 {% set name = "FinLogic" %}
-{% set version = "0.3.10" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 94e08a18a4e262beab2deea4ffa847112410df6931fb98108b630ac1bccdda13
+  sha256: 1b0e794e119f62919f75282b763a16780c5bf7345526078457f72d2c08401e92
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - pandas >=1.4.0
     - requests >=2.27.0
     - zstandard >=0.17.0
+    - duckdb >=0.7.0
 
 test:
   imports:
